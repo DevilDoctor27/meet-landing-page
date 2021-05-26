@@ -1,0 +1,406 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-color: #FAFAFA;
+    font-family: 'Red Hat Display', sans-serif;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1150px;
+}
+
+
+/* Intro
+=================*/
+.intro {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+.intro__logo {
+    display: block;
+    margin: 80px auto 0;
+}
+
+ .intro__items {
+    margin: 108px -32px 0;
+    position: relative;
+}
+
+.intro__photos {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.intro__people {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.intro__people-column {
+    margin: -14px 16px;
+}
+
+.intro__people-column.up {
+    margin-top: -69px;
+}
+
+.intro__people-column.down {
+    margin-top: 55px;
+}
+.intro__person {
+    display: block;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin: 28px 0;
+}
+
+.intro__content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 540px;
+    padding: 0 20px;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.intro__title {
+    padding: 0 40px;
+    color: #28283D;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1;
+}
+
+.intro__text {
+    margin-top: 34px;
+    color: #87879D;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.intro__buttons {
+    margin-top: 32px;
+}
+
+
+.btn {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 18px 31px;
+    border-radius: 29px;
+    border: none;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: background-color .3s linear;
+}
+
+.btn--blue {
+    background-color: #4D96A9;
+}
+
+.btn--blue:hover {
+    background-color: #71C0D4;
+}
+
+.btn--blue .blue {
+    color: #8FE3F9;
+}
+
+.btn--purple {
+    background-color: #855FB1;
+}
+
+.btn--purple:hover {
+    background-color: #B18BDD;
+}
+
+
+.mark {
+    margin-top: 110px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.mark__line {
+    margin: 0 auto;
+    width: 1px;
+    height: 84px;
+    color: transparent;
+    background-color: #D8D8D8;
+}
+
+.mark__number {
+    display: inline-block;
+    margin: 0 auto;
+    width: 56px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 56px;
+    font-weight: 700;
+    color: #87879D;
+    background-color: #FAFAFA;
+    border-radius: 50%;
+    border: 1px solid #D8D8D8;
+}
+
+
+/* Info
+============*/
+.info {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.info__gallery {
+    margin: 0 4px;
+}
+
+.info__img {
+    display: inline-block;
+    border-radius: 8px;
+    margin: 4px;
+    width: 100%;
+    max-width: 255px;
+    height: auto;
+}
+
+.info__content {
+    margin-top: 80px;
+}
+
+.info__suptitle {
+    font-size: 16px;
+    color: #4D96A9;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.info__title {
+    max-width: 445px;
+    margin: 16px auto 0;
+    font-size: 40px;
+    color: #28283D;
+    line-height: 1.1;    
+}
+
+.info__text {
+    max-width: 540px;
+    margin: 32px auto 0;
+    color: #87879D;
+    font-weight: 500;
+}
+
+
+/* Footer
+============*/
+.footer {
+    margin-top: -28px;
+    padding: 116px 0 0;
+    height: 308px;
+    background: url("../images/footer-bg.jpg") no-repeat center;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__title {
+    font-size: 40px;
+    font-weight: 900;
+    color: #fafafa;
+}
+
+.footer__text {
+    font-weight: 500;
+    color: #fafafa;
+    width: 380px;
+}
+
+.footer__btn {
+    margin-left: 125px;
+    width: 192px;
+    height: 58px;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 1230px) {
+    .intro__photos {
+        justify-content: center;
+    }
+
+    .intro__people.right {
+        margin-left: 18px;
+        margin-top: -55px;
+    }
+
+    .intro__content {
+        position: static;
+        transform: translateX(0);
+        margin: 72px auto 0;
+    }
+
+    .info__img {
+        max-width: 164px;
+    }
+
+    .footer__btn {
+        margin-left: 40px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .intro__logo {
+        margin-top: 48px;
+    }
+
+    .intro__title {
+        font-size: 48px;
+    }
+
+    .intro__text {
+        margin: 34px auto 0;
+        font-size: 16px;
+        max-width: 457px;
+    }
+
+    .mark {
+        margin-top: 80px;
+    }
+
+    .info__content {
+        margin-top: 48px;
+    }
+
+    .footer {
+        height: 428px;
+        background: url("../images/footer-bg-tablet.jpg") no-repeat center;
+    }
+
+    .footer__inner {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__title {
+        width: 457px;
+    }
+
+    .footer__text {
+        margin-top: 32px;
+        width: 100%;
+        max-width: 573px;
+    }
+
+    .footer__btn {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 0;
+    }
+
+    .intro__items {
+        margin-top: 34px;
+    }
+
+    .intro__photos {
+        transform: scale(.5);
+    }
+
+    .intro__content {
+        margin-top: -20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro__title {
+        font-size: 40px;
+        padding: 0 60px;
+    }
+
+    .intro__text {
+        width: 327px;
+    }
+
+    .intro__buttons {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        margin: 12px 0 0;
+        display: block;
+    }
+
+    .info__gallery {
+        margin: 0;
+    }
+
+    .info__img {
+        max-width: 151px;
+    }
+
+    .info__content {
+        margin: 64px auto 0;
+        width: 327px;
+    }
+
+    .info__title {
+        font-size: 32px;
+    }
+
+    .info__text {
+        line-height: 26px;
+        font-size: 16px;
+    }
+
+    .footer {
+        padding-top: 92px;
+    }
+
+    .footer__title {
+        font-size: 32px;
+        width: 327px;
+    }
+
+    .footer__text {
+        width: 327px;
+    }
+
+    .footer__btn {
+        margin-top: 32px;
+    }
+}
